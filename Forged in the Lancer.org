@@ -11,30 +11,13 @@
 Performing a *Skill Check* is done by rolling a pool of d6's and
 taking the result of the highest number rolled.
 
-*** Success gradient:
-#+CAPTION: Controlled Position
-| Highest result | Outcome          | Consequence | Effect       |
-|----------------+------------------+-------------+--------------|
-|            1-3 | Failure          | \check      |              |
-|            4-5 | Partial Success  |             | \check       |
-|              6 | Success          |             | \check       |
-|   multiple 6's | Critical Success |             | \check\check |
-
-#+CAPTION: Risky Position
+#+CAPTION: Success Gradient
 | Highest result | Outcome          | Consequence | Effect       |
 |----------------+------------------+-------------+--------------|
 |            1-3 | Failure          | \check      |              |
 |            4-5 | Partial Success  | \check      | \check       |
 |              6 | Success          |             | \check       |
 |   multiple 6's | Critical Success |             | \check\check |
-
-#+CAPTION:  Desperate Position
-| Highest result | Outcome          | Consequence | Effect |
-|----------------+------------------+-------------+--------|
-|            1-3 | Failure          | \check      |        |
-|            4-5 | Partial Success  | \check      |        |
-|              6 | Success          | \check      | \check |
-|   multiple 6's | Critical Success |             | \check |
 
 *** Bonuses
 Bonuses are measured using *Accuracy* and *Difficulty*. *Accuracy*
@@ -78,6 +61,7 @@ normal, risky, and heroic rolls in LANCER.
 | Risky      | 0             | Time is of the essence, a skillful attempt, dangerous environment         |
 | Desperate  | +1 Difficulty | You are on the back foot, unprepared, out-skilled, in overwhelming danger |
 |            |               | <30>                                                                      |
+|------------+---------------+---------------------------------------------------------------------------|
 
 *Effect* reflects how much their plan can actually solve the problem
 at hand. It doesn't matter how many 6s you roll if you're trying to
@@ -98,6 +82,7 @@ clock you'd be able to fill up with a success. The most common
 | Great    |       +3 | Substantial progress is made towards a complex goal                      |
 | Extreme  |       +4 | Most complex goals are achieved in their entirety                        |
 |          |          | <40>                                                                     |
+|----------+----------+--------------------------------------------------------------------------|
 
 When asking for a roll, ask for their plan which roughly establishes
 *Position*, and negotiate what would the appropriate *Effect* their plan
@@ -121,20 +106,24 @@ the option and incentive to do so.
 ** Harm
 # TODO HP thresholds
 
-#+CAPTION: Harm
-| Total HP | Light Wounds | Moderate Wounds | Heavy Wounds |
-|----------+--------------+-----------------+--------------|
-|        6 | <= 5         | <= 3            | <= 1         |
-|        7 | <= 6         | <= 3            | <= 1         |
-|        8 | <= 7         | <= 4            | <= 1         |
-|        9 | <= 8         | <= 5            | <= 2         |
-|       10 | <= 9         | <= 5            | <= 2         |
-|       11 | <= 10        | <= 6            | <= 2         |
-|       12 | <= 11        | <= 7            | <= 3         |
-|       13 | <= 12        | <= 7            | <= 3         |
-|       14 | <= 13        | <= 8            | <= 3         |
-|       15 | <= 14        | <= 9            | <= 4         |
-#+TBLFM: $1=@#+4
+#+CAPTION: Pilot Harm Thresholds
+|------------------------+-----------------------+--------------------------------------------------------------+--------------------------------------------------------------------------|
+|               Total HP | Light Wounds          | Moderate Wounds                                              | Heavy Wounds                                                             |
+|------------------------+-----------------------+--------------------------------------------------------------+--------------------------------------------------------------------------|
+|                      6 | <= 5                  | <= 3                                                         | <= 1                                                                     |
+|                      7 | <= 6                  | <= 3                                                         | <= 1                                                                     |
+|                      8 | <= 7                  | <= 4                                                         | <= 1                                                                     |
+|                      9 | <= 8                  | <= 5                                                         | <= 2                                                                     |
+|                     10 | <= 9                  | <= 5                                                         | <= 2                                                                     |
+|                     11 | <= 10                 | <= 6                                                         | <= 2                                                                     |
+|                     12 | <= 11                 | <= 7                                                         | <= 3                                                                     |
+|                     13 | <= 12                 | <= 7                                                         | <= 3                                                                     |
+|                     14 | <= 13                 | <= 8                                                         | <= 3                                                                     |
+|                     15 | <= 14                 | <= 9                                                         | <= 4                                                                     |
+|------------------------+-----------------------+--------------------------------------------------------------+--------------------------------------------------------------------------|
+| 6 + Grit + Armor Bonus | Degrade *Effect* by 1 | +1 *Difficulty* on skill checks where harm would be relevant | You may only act if you *Push* yourself or have *Help* from someone else |
+|------------------------+-----------------------+--------------------------------------------------------------+--------------------------------------------------------------------------|
+#+TBLFM: $1=@#+4::$2='(format "<= %d" (- $1 1));N::$3='(format "<= %d" (- (floor (/ (* $1 2) 3)) 1));N::$4='(format "<= %d" (- (floor (/ $1 3)) 1));N
 
 
 ** Burdens
@@ -147,15 +136,26 @@ many *Burdens*
 
 *** Immediate effects of Burdens
 # TODO
+Roll ~Xd6kl1~ where X is the number of Burdens (including the one you
+just took) and take the lowest result.
+|    ~Xd6kl1~ | Effect                                                                                                                                |
+|-------------+---------------------------------------------------------------------------------------------------------------------------------------|
+|         5-6 | +1 *Difficulty* on all actions.                                                                                                       |
+|         2-4 | *Consequences* are 1 step worse.                                                                                                      |
+|           1 | Any action you participate in has a *Desperate* position.                                                                             |
+| multiple 1s | You take a *Consequence* worse than from a *Desperate Position*, It should be something you can't resolve within the current *Scene*. |
+
+
 *** Long-term effects of Burdens
 # TODO Table formatting
-| number of burdens | effect                                                                                                                                       |
+| Number of burdens | Effect                                                                                                                                       |
 |-------------------+----------------------------------------------------------------------------------------------------------------------------------------------|
 |                1+ | Take an additional +1 Stress whenever you roll a *Resistance* roll.                                                                          |
 |                2+ | Whenever you *Help* someone with a skill check, they take +1 *Stress*; Whenever someone *Helps* you with a skill check, you take +1 *Stress* |
 |                3+ | If nobody *Helps* you with a skill check, degrade your position by 1                                                                         |
 |                 4 | You /cannot/ use any actions or perform any checks or saves that could potentially incur in taking *Stress*                                  |
 |                   | <40>                                                                                                                                        |
+|-------------------+---------------------------------------------------------------------------------------------------------------------------------------------|
 
 ** Accuracies and Difficulties
 These come from anything and everything, if relevant to the action at
