@@ -1,168 +1,91 @@
-#+title: Eleonor's Alternate Skill Check for LANCER: RPG
+#+title: Eleonor's Alternate Stress and Burdens for Lancer: RPG
 #+author: Eleonor V.
 #+OPTIONS: toc:nil
 
-* Eleonor's Alternate Skill Check
+* Eleonor's Alternate Stress and Burdens for Lancer: RPG
 
 ** Justification and Goals
-# TODO
+I wanna use *Stress* mooooore!! And I want *Harm* as described in the
+corebook!! and being able to juggle them!!
 
-** Skill Checks
-Performing a *Skill Check* is done by rolling a pool of d6's and
-taking the result of the highest number rolled.
+** Stress
+In addition to *HP* and *Armor*, your pilot has a *Stress* bar,
+represented by an 8-segment clock.
 
-#+CAPTION: Success Gradient
-| Highest result | Outcome          | Consequence | Effect       |
-|----------------+------------------+-------------+--------------|
-|            1-3 | Failure          | \check      |              |
-|            4-5 | Partial Success  | \check      | \check       |
-|              6 | Success          |             | \check       |
-|   multiple 6's | Critical Success |             | \check\check |
-
-*** Bonuses
-Bonuses are measured using *Accuracy* and *Difficulty*. *Accuracy*
-comes from various sources like *Skill Triggers*, *Position* and
-*Equipment*, among whatever other sources your players can
-successfully argue for. *Difficulty* largely comes from *Position*,
-but may also include specific circumstances, or the level of *Harm*
-the player character has when making this check, or just because you,
-as the GM, might want to make the roll harder. The final d6 pool has a
-minimum of 1d6, no matter how many remaining difficulties.
-- Remove 1d6 per *Difficulty*
-- Add 1d6 per *Accuracy*
-- Acc/Diff cancel 1:1 as normal
-
-*** Using Skill Triggers as bonuses
-Instead of ~1d20 +2/+4/+6~, as you would in the core rules, roll ~[1 +
-{1/2/3}] d6kh1~. That is, for each point in the relevant Skill Trigger
-used, add 1d6 to the roll the highest after all bonuses have been
-calculated.
+#+BEGIN_QUOTE
+The final concept added to narrative play when using bonds is
+STRESS. STRESS represents wear and tear experienced by pilots, both
+physical and mental. It is tracked using an eight-segment clock.
+-----
+STRESS represents not only physical harm, but also
+exhaustion, fatigue, mental or emotional suffering,
+and so on. As such, PCs can take stress in a range of
+situations, including ones that aren’t violent or phys-
+ically dangerous (e.g., social situations, gathering
+information, etc).
+  ---Field Guide: The Karrakin Trade Baronies, p.88
+#+END_QUOTE
 
 ** Resistance rolls
 On receiving a Consequence, you may automatically ignore all of it, at
-the cost of ~6 - Xd6kh1~ Stress, where ~X~ is number of relevant
-skills. Regardless of how many points of each skill you may have, only
-the number of relevant skills counts.
-
-** Position and Effect
-*Position* reflects how well a PC can execute their plan of
-action. Attempting to sneak up behind a guard in the dead of night
-with a cloaking device will provide a much higher Positioning than
-attempting the same in broad daylight and directly in their light of
-sight, while they're surrounded by 50 of their buddies. There are
-three common *Positions*: *Controlled*, *Risky*, *Desperate*. The most
-common *Position* should be *Risky*. This roughly corresponds with
-normal, risky, and heroic rolls in LANCER.
-
-#+CAPTION: Position Table
-| Position   | Bonus         | Examples                                                                  |
-|------------+---------------+---------------------------------------------------------------------------|
-| Controlled | +1 Accuracy   | No urgency, plentiful tools, good training, etc.                          |
-| Risky      | 0             | Time is of the essence, a skillful attempt, dangerous environment         |
-| Desperate  | +1 Difficulty | You are on the back foot, unprepared, out-skilled, in overwhelming danger |
-|            |               | <30>                                                                      |
-|------------+---------------+---------------------------------------------------------------------------|
-
-*Effect* reflects how much their plan can actually solve the problem
-at hand. It doesn't matter how many 6s you roll if you're trying to
-blow up a capital ship with a bandage. If their plan of action has no
-possibility of producing any effect whatever the result of the roll,
-ask your player to come up with another plan entirely; This one won't
-work. *Effect* /roughly/ translates to how many segments of the goal
-clock you'd be able to fill up with a success. The most common
-*Effects* are: *Limited*, *Standard*, *Great*, as well as *Zero*, and
-*Extreme*. Most rolls should be *Standard Effect*.
-
-#+CAPTION: Effects Tables
-| Effect   | Segments | Outcome                                                                  |
-|----------+----------+--------------------------------------------------------------------------|
-| Zero     |       +0 | Nothing is achieved                                                      |
-| Limited  |       +1 | Follow-up actions are needed to achieve the goal                         |
-| Standard |       +2 | A simple goal is achieved, or significant progress towards a complex one |
-| Great    |       +3 | Substantial progress is made towards a complex goal                      |
-| Extreme  |       +4 | Most complex goals are achieved in their entirety                        |
-|          |          | <40>                                                                     |
-|----------+----------+--------------------------------------------------------------------------|
-
-When asking for a roll, ask for their plan which roughly establishes
-*Position*, and negotiate what would the appropriate *Effect* their plan
-and *Position* would achieve. It is OK to go back and forth a short bit
-to properly assess the situation
-
-** Consequences
-Skill checks need to represent a real possibility of consequence; If
-nothing happens on a failure, just don't roll. Always establish the
-consequences *before* the rolls happen. The most common sources of
-consequences in LANCER are: *HP/Stress*, and narrative
-repercussions.
-
-For example, if you fail to persuade a noble, maybe you don't get shot
-instantly, but your reputation with them is worsened. They will send a
-gang of thugs to beat you up for your transgressions later on. Don't
-be afraid to harm a pilot's HP directly if it makes narrative sense,
-they can resist it with *Stress* using a *Resistence Roll*, give them
-the option and incentive to do so.
+the cost of ~6 - Xd6kh1~ Stress, that is, roll ~Xd6~ where ~X~ is
+number of relevant skills and take the /highest/ result. Regardless of
+how many points of each skill you may have, only the number of
+relevant skills counts. This does not mean you succeed a check, but
+rather that you narrowly avoided the consequences of failing said
+check.
 
 ** Harm
-# TODO HP thresholds
 
 #+CAPTION: Pilot Harm Thresholds
-|------------------------+-----------------------+--------------------------------------------------------------+--------------------------------------------------------------------------|
-|               Total HP | Light Wounds          | Moderate Wounds                                              | Heavy Wounds                                                             |
-|------------------------+-----------------------+--------------------------------------------------------------+--------------------------------------------------------------------------|
-|                      6 | <= 5                  | <= 3                                                         | <= 1                                                                     |
-|                      7 | <= 6                  | <= 3                                                         | <= 1                                                                     |
-|                      8 | <= 7                  | <= 4                                                         | <= 1                                                                     |
-|                      9 | <= 8                  | <= 5                                                         | <= 2                                                                     |
-|                     10 | <= 9                  | <= 5                                                         | <= 2                                                                     |
-|                     11 | <= 10                 | <= 6                                                         | <= 2                                                                     |
-|                     12 | <= 11                 | <= 7                                                         | <= 3                                                                     |
-|                     13 | <= 12                 | <= 7                                                         | <= 3                                                                     |
-|                     14 | <= 13                 | <= 8                                                         | <= 3                                                                     |
-|                     15 | <= 14                 | <= 9                                                         | <= 4                                                                     |
-|------------------------+-----------------------+--------------------------------------------------------------+--------------------------------------------------------------------------|
-| 6 + Grit + Armor Bonus | Degrade *Effect* by 1 | +1 *Difficulty* on skill checks where harm would be relevant | You may only act if you *Push* yourself or have *Help* from someone else |
-|------------------------+-----------------------+--------------------------------------------------------------+--------------------------------------------------------------------------|
+|------------------------+--------------------------+--------------------------------------------------------------+--------------------------------------------------------------------------|
+|               Total HP | Light Wounds             | Moderate Wounds                                              | Heavy Wounds                                                             |
+|------------------------+--------------------------+--------------------------------------------------------------+--------------------------------------------------------------------------|
+|                      6 | <= 5                     | <= 3                                                         | <= 1                                                                     |
+|                      7 | <= 6                     | <= 3                                                         | <= 1                                                                     |
+|                      8 | <= 7                     | <= 4                                                         | <= 1                                                                     |
+|                      9 | <= 8                     | <= 5                                                         | <= 2                                                                     |
+|                     10 | <= 9                     | <= 5                                                         | <= 2                                                                     |
+|                     11 | <= 10                    | <= 6                                                         | <= 2                                                                     |
+|                     12 | <= 11                    | <= 7                                                         | <= 3                                                                     |
+|                     13 | <= 12                    | <= 7                                                         | <= 3                                                                     |
+|                     14 | <= 13                    | <= 8                                                         | <= 3                                                                     |
+|                     15 | <= 14                    | <= 9                                                         | <= 4                                                                     |
+|------------------------+--------------------------+--------------------------------------------------------------+--------------------------------------------------------------------------|
+| 6 + Grit + Armor Bonus | *Effect* is 1 step worse | +1 *Difficulty* on skill checks where harm would be relevant | You may only act if you *Push* yourself or have *Help* from someone else |
+|------------------------+--------------------------+--------------------------------------------------------------+--------------------------------------------------------------------------|
 #+TBLFM: $1=@#+4::$2='(format "<= %d" (- $1 1));N::$3='(format "<= %d" (- (floor (/ (* $1 2) 3)) 1));N::$4='(format "<= %d" (- (floor (/ $1 3)) 1));N
 
 
 ** Burdens
-When you exceed your *Stress* bar, you obtain a *Burden*, as detailed
-in _Field Guide to the Karrakin Trade Baronies_. However, once you
-obtain a *Burden*, you will suffer an immediate negative effect that
-lasts until the end of the current *Scene*, as well as a persistent
-negative effect which lasts for as long as you have /at least/ that
-many *Burdens*
+When you would take *Stress* that would exceed your maximum, you
+*Break* and obtain a *Burden*, as detailed in _Field Guide: The
+Karrakin Trade Baronies_ (p.89). In addition, once you obtain a
+*Burden*, you will suffer an immediate negative effect that lasts
+until the end of the current *Scene*, as well as a persistent negative
+effect which lasts for as long as you have /at least/ that many
+*Burdens*
 
 *** Immediate effects of Burdens
 # TODO
 Roll ~Xd6kl1~ where X is the number of Burdens (including the one you
 just took) and take the lowest result.
-|    ~Xd6kl1~ | Effect                                                                                                                                |
-|-------------+---------------------------------------------------------------------------------------------------------------------------------------|
-|         5-6 | +1 *Difficulty* on all actions.                                                                                                       |
-|         2-4 | *Consequences* are 1 step worse.                                                                                                      |
-|           1 | Any action you participate in has a *Desperate* position.                                                                             |
-| multiple 1s | You take a *Consequence* worse than from a *Desperate Position*, It should be something you can't resolve within the current *Scene*. |
+|    ~Xd6kl1~ | Effect                                                                                                                                          |
+|-------------+-------------------------------------------------------------------------------------------------------------------------------------------------|
+|         5-6 | +1 *Difficulty* on all actions.                                                                                                                 |
+|         2-4 | *Consequences* are 1 step worse.                                                                                                                |
+|           1 | Any action you participate in is a *Heroic* roll                                                                                                |
+| multiple 1s | You take a *Consequence* worse than failing a *Heroic* roll, It should be catastrophic; something you can't resolve within the current *Scene*. |
+|-------------+-------------------------------------------------------------------------------------------------------------------------------------------------|
 
 
 *** Long-term effects of Burdens
-# TODO Table formatting
 | Number of burdens | Effect                                                                                                                                       |
 |-------------------+----------------------------------------------------------------------------------------------------------------------------------------------|
 |                1+ | Take an additional +1 Stress whenever you roll a *Resistance* roll.                                                                          |
 |                2+ | Whenever you *Help* someone with a skill check, they take +1 *Stress*; Whenever someone *Helps* you with a skill check, you take +1 *Stress* |
 |                3+ | If nobody *Helps* you with a skill check, degrade your position by 1                                                                         |
 |                 4 | You /cannot/ use any actions or perform any checks or saves that could potentially incur in taking *Stress*                                  |
-|                   | <40>                                                                                                                                        |
-|-------------------+---------------------------------------------------------------------------------------------------------------------------------------------|
-
-** Accuracies and Difficulties
-These come from anything and everything, if relevant to the action at
-hand.
-- Background
-- Pilot Gear, Mech equipments, tools, items, etc.
-- Contacts
-- Reputation
-- etc.
+|                   | <40>                                                                                                                                         |
+|-------------------+----------------------------------------------------------------------------------------------------------------------------------------------|
 
