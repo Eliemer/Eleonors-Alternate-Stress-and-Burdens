@@ -5,8 +5,21 @@
 * Eleonor's Alternate Stress and Burdens for Lancer: RPG
 
 ** Justification and Goals
-I wanna use *Stress* mooooore!! And I want *Harm* as described in the
-corebook!! and being able to juggle them!!
++I wanna use *Stress* mooooore!! And I want *Harm* as described in the
+core rule book!! and being able to juggle them!!+
+
+I want heroes to be able to have more tools to navigate failures and
+better, but simple, ways to represent the toll of taking on a mission.
+
+As presented in KTB, Burdens don't really do much of anything, and
+Stress actually /reduces/ the potential consequences that failure
+could bring. This document intends to keep the detailed Consequences
+described in the core rule book, while giving a mechanism to narrowly
+avoid it by using Stress.
+
+Importantly, the experience should not punish or frustrate players for
+using Stress, but rather promote alternate routes to failure and
+agency.
 
 ** Stress
 In addition to *HP* and *Armor*, your pilot has a *Stress* bar,
@@ -23,6 +36,7 @@ and so on. As such, PCs can take stress in a range of
 situations, including ones that aren’t violent or phys-
 ically dangerous (e.g., social situations, gathering
 information, etc).
+
   ---Field Guide: The Karrakin Trade Baronies, p.88
 #+END_QUOTE
 
@@ -34,6 +48,9 @@ how many points of each skill you may have, only the number of
 relevant skills counts. This does not mean you succeed a check, but
 rather that you narrowly avoided the consequences of failing said
 check.
+
+**** COMMENT Dev Notes
+I /must/ establish a good rubric for what a "relevant skill" is.
 
 ** Harm
 
@@ -56,12 +73,19 @@ check.
 |------------------------+--------------------------+--------------------------------------------------------------+--------------------------------------------------------------------------|
 #+TBLFM: $1=@#+4::$2='(format "<= %d" (- $1 1));N::$3='(format "<= %d" (- (floor (/ (* $1 2) 3)) 1));N::$4='(format "<= %d" (- (floor (/ $1 3)) 1));N
 
+**** COMMENT Dev Notes
+This table might be too harsh because it makes heroics *less
+likely*. It doesn't raise the stakes, it makes acting harder, which
+goes against the fantasy of Lancers being the best of the best and
+going above and beyond to achieve their goals.
+
 
 ** Burdens
 When you would take *Stress* that would exceed your maximum, you
 *Break* and obtain a *Burden*, as detailed in _Field Guide: The
-Karrakin Trade Baronies_ (p.89). In addition, once you obtain a
-*Burden*, you will suffer an immediate negative effect that lasts
+Karrakin Trade Baronies_ (p.89) with one exception: You are not
+removed from a *Scene* when you *Break*. In addition, once you obtain
+a *Burden*, you will suffer an immediate negative effect that lasts
 until the end of the current *Scene*, as well as a persistent negative
 effect which lasts for as long as you have /at least/ that many
 *Burdens*
@@ -77,6 +101,13 @@ just took) and take the lowest result.
 |           1 | Any action you participate in is a *Heroic* roll                                                                                                |
 | multiple 1s | You take a *Consequence* worse than failing a *Heroic* roll, It should be catastrophic; something you can't resolve within the current *Scene*. |
 |-------------+-------------------------------------------------------------------------------------------------------------------------------------------------|
+**** COMMENT Dev Notes
+Immediate Effects of burdens should be /complications/ to the
+narrative: Something happens down the road. You've used Stress to
+avoid consequence, you should not be punished with consequence (right
+now). Resisting should always result in avoiding the most immediate
+problems. Perhaps, these immediate effects mean you kick the can down
+the road in some unforeseen way, rather than punish you right now.
 
 
 *** Long-term effects of Burdens
@@ -88,4 +119,14 @@ just took) and take the lowest result.
 |                 4 | You /cannot/ use any actions or perform any checks or saves that could potentially incur in taking *Stress*                                  |
 |                   | <40>                                                                                                                                         |
 |-------------------+----------------------------------------------------------------------------------------------------------------------------------------------|
+**** COMMENT Dev notes
+Taking extra stress is fineee. Raising the cost of /avoiding/
+consequences is fiiiine, but Burdens should not punishing you for
+existing. They should be raising the cost of weaseling out of
+failure. They shouldn't make skill checks harder. They could also be
+easier to obtain and easier to get rid of? Then, they just represent
+the mounting pressures of /a single mission/ rather than the long-term
+attrition of a campaign.
 
+I do have to take into consideration compatibility with KTB/SOTW Bonds
+that interact directly with Burdens.
