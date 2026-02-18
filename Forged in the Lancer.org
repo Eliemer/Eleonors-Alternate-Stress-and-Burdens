@@ -3,66 +3,80 @@
 #+OPTIONS: toc:nil
 
 * Justification and Goals
-+I wanna use *Stress* mooooore!! And I want *Harm* as described in the
++I wanna use *Luck* mooooore!! And I want *Harm* as described in the
 core rule book!! and being able to juggle them!!+
 
 I want heroes to be able to have more tools to navigate failures and
 better, but simple, ways to represent the toll of taking on a mission.
 
-This document intends to keep the detailed Consequences described in
+This document intends to keep the detailed *Consequences* described in
 the core rule book, while giving a mechanism to narrowly avoid it by
-using Stress.
+using Luck.
 
 Importantly, the experience should not punish or frustrate players for
-using Stress, but rather promote alternate routes to failure and
+using Luck, but rather promote alternate routes to failure and
 agency.
 
-* Stress
-In addition to *HP* and *Armor*, your pilot has a *Stress* bar,
-represented by an 8-segment clock. It represents your Pilot's ability
-to adapt and circumvent their circumstances and even their own
-shortcomings. Heroes keep pushing!
+# Blades wants to kill you; Lancer wants you to be Heroic
 
-The major difference between this and Stress as described in KTB is
-that Stress represents the energy and exhaustion that pilots suffer
-from fixing their mistakes in the heat of the moment. They get to
-avoid consequences entirely, at the cost of their own well-being.
+* Luck
+In addition to *HP* and *Armor*, your pilot has a *Luck* bar,
+represented by an 8-segment clock that starts out full and is consumed
+when your pilot pushes their luck to make the best out of a bad
+situation. It represents your Pilot's ability to adapt and circumvent
+their circumstances, and even their own shortcomings. Heroes keep
+pushing!
+
+Psst. This is the same thing as Stress from the KTB rules, just
+flipped around ~Luck = 8 - Stress~. Whenever something would give you
++1 Stress, instead subtract -1 Luck.
+
+The major difference between *Luck* and Stress as described in KTB is
+that *Luck* represents their ability to come back from mistakes, any kind,
+rather than as a measure of their exhaustion or harm.
 
 * Resisting Consequences
 On failing a *Skill Check*, before receiving a Consequence, you may
 automatically ignore /all of it/, as if you had succeeded in the
-*Skill Check*, at the cost of *Stress* corresponding to the magnitude
+*Skill Check*, at the cost of *Luck* corresponding to the magnitude
 of the *Consequence* avoided. (Refer to KTB, p.88 "Taking Stress" for
 levels of *Consequences*, and CRB, p.46 "Consequences" for what those
 could be)
 
-|-------------+--------|
-| Consequence | Stress |
-|-------------+--------|
-| Minor       |    1-2 |
-| Typical     |    2-3 |
-| Major       |    3-6 |
-|-------------+--------|
+|-------------+------|
+| Consequence | Luck |
+|-------------+------|
+| Minor       |  1-2 |
+| Typical     |  2-3 |
+| Major       |  3-6 |
+|-------------+------|
 
 * Burdens
-When you would take *Stress* that would exceed your maximum, you
-*Break* and obtain a *Burden*, as detailed in _Field Guide: The
-Karrakin Trade Baronies_ (p.89) with one exception: You are not
-removed from a *Scene* when you *Break*. In addition, once you obtain
-a *Burden*, you will suffer an immediate negative effect, as well as a
-persistent negative effect which lasts until you fill up that burden's
-clock and clear it.
+When your *Luck* would reach 0, you *Run out of Luck*, you managed to
+stave off immediate problems, but that's just kicking the can down the
+road. You will suffer from an *Unforeseen Consequence* later, as well
+as receive a new *Burden* that persists until you clear it,
+represented by a clock, as detailed in _Field Guide: The Karrakin
+Trade Baronies_ (p.89).
 
-** Immediate effects of Burdens
+** Unforeseen Consequences
 Your actions has solved the matter at hand, but have caused unforeseen
 consequences. At any time after this *Scene*, your Pilot suffers from
-consequences different than the ones avoided, and of similar
-magnitude. E.g., You avoided damage from gun fire, but eventually, you
-run out of ammo much faster than expected.
+consequences different than the ones avoided of equal or greater
+magnitude.
+
+#+BEGIN_QUOTE
+While lock-picking a security door, Hammond nearly tripped the
+alarm system by failing his Skill Check, but, he managed to narrowly
+avoid alerting the entire complex. However, as luck would have it,
+unbeknownst to Hammond, a rival team had hacked into the security
+cameras and caught him red-handed. They will use this information as
+blackmail when the time is right.
+#+END_QUOTE
 
 **** COMMENT Dev Notes
 Immediate Effects of burdens should be /complications/ to the
-narrative: Something happens down the road. You've used Stress to
+narrative: Something happens down the road. You've used Luck to
 avoid consequence, you should not be punished with consequence (right
 now). Resisting should always result in avoiding the most immediate
 problems. Perhaps, these immediate effects mean you kick the can down
@@ -73,11 +87,57 @@ Long-term effects represent trauma, character flaws, grievances,
 prejudices, and other factors that /influence/ the decision-making
 process of your Pilot. These are not mechanical penalties, but rather,
 tools to guide your role-playing. Use words or short phrases that
-reflect your pilot's negative, or uncooperative traits. E.g., After
-failing to lock-pick a door, John developed "Self-doubt" in their
-skills. They will hesitate to offer their skills when the stakes are
-high. John is still very skilled at lock-picking, if they do brave to
-make another skill check.
+reflect your pilot's negative, or uncooperative traits.
+
+#+BEGIN_QUOTE
+After failing to lock-pick a door, John developed "Self-doubt"
+in their skills. They will hesitate to offer their skills when the
+stakes are high. John is still very skilled at lock-picking, if they
+do brave to make another skill check.
+#+END_QUOTE
+
+# I need to playtest these values
+You may invoke a Burden by applying +1 *Difficulty* on a skill check
+to, either regain 2 *Luck* or fill 1 segment of that *Burdens* clock.
+
+* Optional rules
+I've place these here, because, while I think they deserve some design
+space to mess around with, they progressively make Pilots worse, which
+often causes a failure spiral and may be frustrating to play with.
+
+If you would like your game to be more punishing, and your players
+would like to do worse as injuries accumulate, these are for you.
+
+** Harm Table
+#+CAPTION: Pilot Harm Thresholds
+|------------------------+--------------------------+--------------------------------------------------------------+--------------------------------------------------------------------------|
+|               Total HP | Light Wounds             | Moderate Wounds                                              | Heavy Wounds                                                             |
+|------------------------+--------------------------+--------------------------------------------------------------+--------------------------------------------------------------------------|
+|                      6 | <= 5                     | <= 3                                                         | <= 1                                                                     |
+|                      7 | <= 6                     | <= 3                                                         | <= 1                                                                     |
+|                      8 | <= 7                     | <= 4                                                         | <= 1                                                                     |
+|                      9 | <= 8                     | <= 5                                                         | <= 2                                                                     |
+|                     10 | <= 9                     | <= 5                                                         | <= 2                                                                     |
+|                     11 | <= 10                    | <= 6                                                         | <= 2                                                                     |
+|                     12 | <= 11                    | <= 7                                                         | <= 3                                                                     |
+|                     13 | <= 12                    | <= 7                                                         | <= 3                                                                     |
+|                     14 | <= 13                    | <= 8                                                         | <= 3                                                                     |
+|                     15 | <= 14                    | <= 9                                                         | <= 4                                                                     |
+|------------------------+--------------------------+--------------------------------------------------------------+--------------------------------------------------------------------------|
+| 6 + Grit + Armor Bonus | *Effect* is 1 step worse | +1 *Difficulty* on skill checks where harm would be relevant | You may only act if you *Push* yourself or have *Help* from someone else |
+|------------------------+--------------------------+--------------------------------------------------------------+--------------------------------------------------------------------------|
+#+TBLFM: $1=@#+4::$2='(format "<= %d" (- $1 1));N::$3='(format "<= %d" (- (floor (/ (* $1 2) 3)) 1));N::$4='(format "<= %d" (- (floor (/ $1 3)) 1));N
+
+** Burden Table
+#+CAPTION: Cummulative Effects of Burden
+| Number of burdens | Effect                                                                                                                                       |
+|-------------------+----------------------------------------------------------------------------------------------------------------------------------------------|
+|                1+ | It costs +1 additional *Luck* whenever you *Resist Consequences*.         |
+|                2+ | Whenever you *Help* someone with a skill check, they take -1 *Luck*; Whenever someone *Helps* you with a skill check, you take -1 *Luck* |
+|                3+ | If nobody *Helps* you with a skill check, degrade your position by 1                                                                         |
+|                 4 | You /cannot/ use any actions or perform any checks or saves that could potentially cost *Luck*                                         |
+|                   | <40>                                                                                                                                         |
+|-------------------+----------------------------------------------------------------------------------------------------------------------------------------------|
 
 **** COMMENT Dev notes
 Taking extra stress is fineee. Raising the cost of /avoiding/
