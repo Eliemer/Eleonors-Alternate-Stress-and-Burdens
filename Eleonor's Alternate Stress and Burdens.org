@@ -1,0 +1,209 @@
+#+title: Eleonor's Alternate Stress and Burdens for Lancer: RPG
+#+author: Eleonor V.
+#+OPTIONS: toc:nil
+#+OPTIONS: author:nil
+
+* License, Attribution and Notices
+This work is licensed under CC BY-SA 4.0. To view a copy of this
+license, visit https://creativecommons.org/licenses/by-sa/4.0/
+
+*You are free to:*
+
+    - *Share* — copy and redistribute the material in any medium or format for any purpose, even commercially.
+    - *Adapt* — remix, transform, and build upon the material for any purpose, even commercially.
+    - The licensor cannot revoke these freedoms as long as you follow the license terms.
+
+*Under the following terms:*
+
+    - *Attribution* — You must give [[https://creativecommons.org/licenses/by/4.0/deed.en#ref-appropriate-credit][appropriate credit]], provide a link to the license, and [[https://creativecommons.org/licenses/by/4.0/deed.en#ref-indicate-changes][indicate if changes were made]]. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+    - *No additional restrictions* — You may not apply legal terms or [[https://creativecommons.org/licenses/by/4.0/deed.en#ref-technological-measures][technological measures]] that legally restrict others from doing anything the license permits.
+
+*Notices:*
+
+You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable [[https://creativecommons.org/licenses/by/4.0/deed.en#ref-exception-or-limitation][exception or limitation]].
+
+No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as [[https://creativecommons.org/licenses/by/4.0/deed.en#ref-publicity-privacy-or-moral-rights][publicity, privacy, or moral rights]] may limit how you use the material.
+
+-----
+Eleonor's Alternate Stress and Burdens for Lancer: RPG is not an
+official Lancer product; it is a third part work, and is not
+affiliated with Massif Press. Eleonor's Alternate Stress and Burdens
+for Lancer: RPG is published via Lancer Third Party License.
+
+Lancer is copyright Massif Press
+-----
+This work is based on [[http://www.bladesinthedark.com/][Blades in the
+Dark]], product of One Seven Design, developed and authored by John
+Harper, and licensed for our use under the
+[[http://creativecommons.org/licenses/by/3.0/][Creative Commons
+Attribution 3.0 Unported license]].
+-----
+This work is inspired by
+[[https://everstrange-games.itch.io/war-stories][War Stories]] created
+by Andrew Wrenn and is a product of Everstrange Games, and licensed
+for our use under the
+[[https://creativecommons.org/licenses/by/4.0/][Creative Commons
+Attribution 4.0 International license]].
+
+This project utilizes several tables and mechanics from this product,
+most of them modified to fit with the reduced ruleset of this project.
+
+* Requirements
+This document *requires*
+[[https://massif-press.itch.io/corebook-pdf][Lancer Core Book: First
+Edition]].. Y'know.. to play Lancer.
+
+This document also *requires* the Stress & Burden rules from
+[[https://massif-press.itch.io/field-guide-the-karrakin-trade-baronies][_Field
+Guide: the Karrakin Trade Baronies_]], but Bond playbooks are not
+required.
+
+* Justification and Goals
+I want heroes to be able to have more tools to navigate failures and
+better, but simple, ways to represent the toll of taking on a mission.
+
+This document intends to keep the detailed *Consequences* described in
+the core rule book, while giving a mechanism to narrowly avoid it by
+using *Luck*.
+
+Importantly, the experience should not punish or frustrate players for
+using Luck, but rather promote alternate routes to failure and agency.
+
+# Blades wants to kill you; Lancer wants you to be Heroic
+
+* Luck
+In addition to *HP* and *Armor*, your pilot has a *Luck* bar,
+represented by an 8-segment clock that starts out full and is consumed
+when your pilot pushes their luck to make the best out of a bad
+situation. It represents your Pilot's ability to adapt and circumvent
+their circumstances, and even their own shortcomings. Heroes keep
+pushing!
+
+#+BEGIN_QUOTE
+Psst. This is the same thing as Stress from the KTB rules (p.88), just
+flipped around ~Luck = 8 - Stress~. Whenever something would give you
++1 *Stress*, instead subtract -1 *Luck*.
+#+END_QUOTE
+
+** Resisting Consequences
+On failing a *Skill Check*, before accepting the consequences, you may
+automatically ignore /all of it/ as if you had succeeded in the
+*Skill Check*, at the cost of *Luck* corresponding to the magnitude of
+the *Consequence* avoided.
+
+#+ATTR_ODT: :rel-width 50
+#+ATTR_ODT: :may-break-between-rows false
+|-------------+------|
+| Consequence | Luck |
+|-------------+------|
+| Minor       |  1-2 |
+| Typical     |  2-3 |
+| Major       |  3-6 |
+|-------------+------|
+
+(Refer to KTB, p.88 "Taking Stress" for levels of *Consequences*, and
+CRB, p.46 "Consequences" for what those could be)
+
+** Running out of Luck
+When your *Luck* would reach 0, you *Run out of Luck*, you managed to
+stave off immediate problems, but you just kick the can down the
+road. You will suffer from *Unforeseen Consequences* later, as well as
+receive a new *Burden*.
+
+Your actions has solved the matter at hand, but have caused unforeseen
+consequences. At any time after this *Scene*, your Pilot suffers from
+consequences different than the ones avoided of equal or greater
+magnitude.
+
+#+BEGIN_EXAMPLE
+While lock-picking a security door, Hammond nearly tripped the alarm
+system by failing his Skill Check, but, he managed to narrowly avoid
+alerting the entire complex. However, as luck would have it,
+unbeknownst to Hammond, a rival team had hacked into the security
+cameras and caught him red-handed. They will use this information as
+blackmail when the time is right.
+#+END_EXAMPLE
+
+* Burdens
+*Burdens* represent trauma, character flaws, grievances, prejudices,
+and other factors that /influence/ the decision-making process of your
+Pilot. Think about these not as mechanical penalties, but rather,
+tools to guide your role-playing. Use words or short phrases that
+reflect your pilot's negative, or uncooperative traits.
+
+You may invoke a *Burden* by applying +1 *Difficulty* on a skill check
+to either regain 2 *Luck* or fill 1 segment of that *Burden's*
+clock.
+
+#+BEGIN_EXAMPLE
+After failing to lock-pick a door, Hammond developed "Self-doubt" in
+their skills. They will hesitate to offer their skills when the stakes
+are high. John is still very skilled at lock-picking, if they do brave
+to make another skill check.
+#+END_EXAMPLE
+
+(Refer to KTB, p.89 "Burdens" for Burdens, their maximum, and how to
+clear them.)
+** Lucky Break
+When you fill all segments of a *Burden*, you remove it and catch a
+*Lucky Break*. The effort you've spent on improving yourself and
+addressing your shortcomings pays off. At any time after this, your
+luck improves and you find an opportunity, loot, connections, time, or
+other reward based on the size of the *Burden* cleared.
+
+#+begin_example
+It took a long time to feel confident in their abilities again, but
+Hammond managed to get back on the saddle, and just in the nick of
+time too; He just got a lead from his old business associate about a
+job with a sizeable payout!
+#+end_example
+
+* Optional rules
+I've place these here, because, while I think they deserve some design
+space to mess around with, they progressively make Pilots worse, which
+often causes a failure spiral and may be frustrating to play with.
+
+If you would like your game to be more punishing, and your players
+would like to do worse as injuries accumulate, these are for you.
+
+Some of the terminology here may be a bit disconnected from the rest
+of the document, as this was a product of a different draft, and not
+the main priority of revisions.
+
+** Harm Table
+#+CAPTION: Pilot Harm Thresholds
+#+ATTR_ODT: :rel-width 75 :may-break-between-rows false
+|------------------------+-------------------------------------------+--------------------------------------------------------------+--------------------------------------------------------------------------|
+| Total HP               | Light Wounds                              | Moderate Wounds                                              | Heavy Wounds                                                             |
+|------------------------+-------------------------------------------+--------------------------------------------------------------+--------------------------------------------------------------------------|
+| /                      | <                                         |                                                              |                                                                          |
+| <l3>                   | <l5>                                      | <l5>                                                         | <l5>                                                                     |
+| 6                      | <= 5                                      | <= 3                                                         | <= 1                                                                     |
+| 7                      | <= 6                                      | <= 3                                                         | <= 1                                                                     |
+| 8                      | <= 7                                      | <= 4                                                         | <= 1                                                                     |
+| 9                      | <= 8                                      | <= 5                                                         | <= 2                                                                     |
+| 10                     | <= 9                                      | <= 5                                                         | <= 2                                                                     |
+| 11                     | <= 10                                     | <= 6                                                         | <= 2                                                                     |
+| 12                     | <= 11                                     | <= 7                                                         | <= 3                                                                     |
+| 13                     | <= 12                                     | <= 7                                                         | <= 3                                                                     |
+| 14                     | <= 13                                     | <= 8                                                         | <= 3                                                                     |
+| 15                     | <= 14                                     | <= 9                                                         | <= 4                                                                     |
+|------------------------+-------------------------------------------+--------------------------------------------------------------+--------------------------------------------------------------------------|
+| 6 + Grit + Armor Bonus | Fill 1 less segment of a clock on Success | +1 *Difficulty* on skill checks where harm would be relevant | You may only act if you *Push* yourself or have *Help* from someone else |
+|------------------------+-------------------------------------------+--------------------------------------------------------------+--------------------------------------------------------------------------|
+#+TBLFM: $1=@#+4::$2='(format "<= %d" (- $1 1));N::$3='(format "<= %d" (- (floor (/ (* $1 2) 3)) 1));N::$4='(format "<= %d" (- (floor (/ $1 3)) 1));N
+
+** Burden Table
+#+CAPTION: Cummulative Effects of Burden
+#+ATTR_ODT: :rel-width 75
+#+ATTR_ODT: :may-break-between-rows nil
+| Number of burdens | Effect                                                                                                                                    |
+|-------------------+-------------------------------------------------------------------------------------------------------------------------------------------|
+|                 / | <                                                                                                                                         |
+|              <r2> | <l8>                                                                                                                                      |
+|                1+ | It costs +1 additional *Luck* whenever you *Resist Consequences*.                                                                         |
+|                2+ | Whenever you *Help* someone with a skill check, they take -1 *Luck*; Whenever someone *Helps* you with a skill check, you take -1 *Luck*  |
+|                3+ | If nobody *Helps* you with a skill check, a normal roll becomes risky, a risky roll becomes heroic, and a heroic roll becomes impossible. |
+|                 4 | You /cannot/ use any actions or perform any checks or saves that could potentially cost *Luck*                                            |
+|-------------------+-------------------------------------------------------------------------------------------------------------------------------------------|
+
